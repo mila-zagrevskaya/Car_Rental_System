@@ -1,0 +1,19 @@
+.burger-icon {
+  height: 12px;
+  width: 21px;
+  margin: 0 -5px 0 0;
+  background: none;
+  border: none;
+  border-bottom: 3px solid $basic-details-color;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 5px;
+    width: 18px;
+    border-top: 3px solid $basic-details-color;
+  }
+}

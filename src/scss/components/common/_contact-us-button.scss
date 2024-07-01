@@ -1,0 +1,28 @@
+.contact-us-button {
+  position: fixed;
+  top: 46%;
+  right: 52px;
+  font-size: 16px;
+  transform-origin: 100% 0;
+  transform: rotate(-90deg);
+  color: #a7b7ee;
+}
+
+.contact-us-link {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a7b7ee;
+  font-weight: 300;
+  text-align: left;
+}
+
+.contact-us-icon {
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    transform: rotate(90deg);
+    font-weight: 300;
+  }
+}

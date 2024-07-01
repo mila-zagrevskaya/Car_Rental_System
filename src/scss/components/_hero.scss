@@ -1,0 +1,118 @@
+.hero {
+  background-image: url(../../assets/images/gradient-home-page.png),
+    url(../../assets/images/upper-gradient.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-sliding-car {
+  position: absolute;
+  left: 0;
+  top: -1000px;
+  background-image: url(../../assets/images/car.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  animation: hero-slide-car 2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-slide-car {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 1000px, 0);
+  }
+  100% {
+    transform: translate3d(0, 1000px, 0);
+  }
+}
+
+.hero-content {
+  max-width: 622px;
+  margin-left: auto;
+}
+
+.hero-title {
+  position: relative;
+  padding-top: 30px;
+  animation-name: slide-title;
+  animation: slide-title $transition 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-title {
+  0% {
+    transform: translateY(-93px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.primary-title {
+  text-shadow: 0px 23px 180px #000;
+  background-image: linear-gradient(to right, #a7b6ee, #fff2f1),
+    linear-gradient(to left, #dee0ed, #dee0ed);
+  color: #dee0ed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 9999;
+}
+
+.title-help {
+  position: relative;
+  text-transform: uppercase;
+  color: $navigation-active-text-second-color;
+  font-weight: normal;
+  margin-left: 28%;
+  font-size: 24px;
+  line-height: 0.7em;
+  letter-spacing: 0.24px;
+  text-align: left;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 79%;
+    right: -98%;
+    width: 116px;
+    border: 1px solid $navigation-active-text-second-color;
+    background-color: $navigation-active-text-second-color;
+  }
+}
+
+.hero-description {
+  margin-top: 52px;
+  animation: slide-hero-description $transition 1;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-hero-description {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text-bold {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+
+.hero-desc {
+  margin: 16px 0 0;
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: 0.78px;
+  text-align: left;
+  color: $pick-up-settings;
+}

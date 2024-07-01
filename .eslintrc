@@ -1,0 +1,56 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+
+  "extends": ["airbnb/base", "plugin:react/recommended"],
+
+  "parser": "babel-eslint",
+
+  "env": {
+    "browser": true
+  },
+
+  "rules": {
+    "class-methods-use-this": "off",
+    "arrow-parents": ["off", { "requireForBlockBody": true }],
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "arrow-parens": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": 0,
+    "react/destructuring-assignment": 0,
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1
+      }
+    ],
+    "linebreak-style": 0,
+    "comma-dangle": ["error", "never"],
+    "max-len": [1, 120, 2],
+    "no-console": [
+      2,
+      {
+        "allow": ["error"]
+      }
+    ]
+  }
+}

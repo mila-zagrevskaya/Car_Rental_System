@@ -1,0 +1,45 @@
+.vehicles {
+  background: url(../../assets/images/vehicles-section/gradient-our-vehicles/gradient-our-vehicles.png);
+  background-size: cover;
+}
+
+.vehicles-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.vehicles-title {
+  text-align: center;
+}
+
+@keyframes vehicles-slide-title {
+  0% {
+    transform: translateY(-93px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.vehicles-text-help {
+  display: block;
+  position: relative;
+  padding-top: 40px;
+  margin-right: -60px;
+  color: $navigation-active-text-second-color;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  text-align: right;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 105%;
+    width: 110px;
+    border: 1px solid $navigation-active-text-second-color;
+    background-color: $navigation-active-text-second-color;
+  }
+}

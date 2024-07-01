@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="52">
+    <defs>
+        <filter id="a" width="1950" height="1110" x="-1061" y="-670" filterUnits="userSpaceOnUse">
+            <feOffset dx="-1.879" dy=".684" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.828"/>
+            <feFlood flood-color="#121419" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".27" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#A7B7EE" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="c" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#262341" stop-opacity=".051"/>
+            <stop offset="0%" stop-color="#262341" stop-opacity=".051"/>
+            <stop offset="18%" stop-color="#372978" stop-opacity=".22"/>
+            <stop offset="100%" stop-color="#482EAF"/>
+        </linearGradient>
+        <filter id="d" width="44" height="42" x="0" y="10" filterUnits="userSpaceOnUse">
+            <feOffset dx="-1.879" dy=".684" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.828"/>
+            <feFlood flood-color="#121419" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".27" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="e" width="34" height="35" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="-1.879" dy=".684" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.828"/>
+            <feFlood flood-color="#121419" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".27" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="f" width="34" height="35" x="11" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="-1.879" dy=".684" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.828"/>
+            <feFlood flood-color="#121419" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".27" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="g" x1="42.262%" x2="0%" y1="0%" y2="90.631%">
+            <stop offset="0%" stop-color="#A7B7EE" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g filter="url(#a)">
+        <path fill="#6149E0" fill-rule="evenodd" d="M37.559 38.52v1.77c0 .733-.594 1.328-1.328 1.328H14.098a1.329 1.329 0 0 1-1.328-1.328v-1.77h24.789z"/>
+        <path fill="#8C89FC" fill-rule="evenodd" d="M14.098 13.944h22.133c.734 0 1.328.594 1.328 1.328v14.795l1.771 7.567c0 .733-.595 1.328-1.328 1.328H12.328A1.328 1.328 0 0 1 11 37.634l1.77-7.693V15.272c0-.734.595-1.328 1.328-1.328z"/>
+        <path fill="#FFF" fill-rule="evenodd" d="M14.098 13.944h22.133c.733 0 1.328.594 1.328 1.328v14.795l-24.789-.126V15.272c0-.734.595-1.328 1.328-1.328z" opacity=".102"/>
+        <path fill="url(#b)" fill-rule="evenodd" d="M14.098 15.944h22.133c.734 0 1.328.594 1.328 1.328V22.1l-24.789-.127v-4.701c0-.734.595-1.328 1.328-1.328z" opacity=".6"/>
+        <path fill="#6149E0" fill-rule="evenodd" d="M14.098 13.944h22.133c.734 0 1.328.594 1.328 1.328v3.796l-24.789-.127v-3.669c0-.734.595-1.328 1.328-1.328z"/>
+        <path fill="url(#c)" fill-rule="evenodd" d="M37.559 30.067l1.771 7.567c0 .733-.595 1.328-1.328 1.328H23.837L12.77 29.941l24.789.126z" opacity=".702"/>
+        <text fill="#FFF" filter="url(#d)" font-family="Roboto" font-size="16" transform="translate(18.66 33.312) scale(.88532)">
+            31
+        </text>
+        <path fill="#8C89FC" fill-rule="evenodd" d="M19.015 12h1.969c.561 0 1.016.455 1.016 1.016v2.968c0 .561-.455 1.016-1.016 1.016h-1.969c-.56 0-1.015-.455-1.015-1.016v-2.968c0-.561.455-1.016 1.015-1.016z" filter="url(#e)"/>
+        <path fill="#8C89FC" fill-rule="evenodd" d="M30.015 12h1.969c.561 0 1.016.455 1.016 1.016v2.968c0 .561-.455 1.016-1.016 1.016h-1.969c-.56 0-1.015-.455-1.015-1.016v-2.968c0-.561.455-1.016 1.015-1.016z" filter="url(#f)"/>
+        <path fill="url(#g)" fill-rule="evenodd" d="M31.015 10.999h.969c.561 0 1.016.455 1.016 1.016v2.969c0 .561-.455 1.016-1.016 1.016h-1.969c.833-2.584 1-5.001 1-5.001zM20.015 10.999h.969c.561 0 1.016.455 1.016 1.016v2.969c0 .561-.455 1.016-1.016 1.016h-1.969c.833-2.584 1-5.001 1-5.001z"/>
+    </g>
+</svg>

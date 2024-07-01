@@ -1,0 +1,63 @@
+%title {
+  position: relative;
+
+  &:before {
+    content: attr(data-title);
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: block;
+    background-image: linear-gradient(to top, #291d3b, #131316),
+    linear-gradient(to bottom, $basic-details-color, $basic-details-color);
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: $basic-details-color;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    z-index: -1;
+    @media (max-width: $breakpoint-lg) {
+      font-size: 55px;
+    }
+  }
+  &:after {
+
+  }
+}
+
+.title-1 {
+  font-size: 130px;
+  font-weight: normal;
+  font-stretch: normal;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 100px;
+  }
+}
+
+.title-2 {
+  @extend %title;
+  background-image: linear-gradient(to right, #a7b6ee, #fff2f1),
+    linear-gradient(to left, #a7b7ee, #a7b7ee);
+  font-size: 55px;
+  letter-spacing: 0.55px;
+  font-weight: normal;
+  color: #a7b7ee;
+  -webkit-background-clip: text;
+  background-clip: text;
+  //-webkit-text-fill-color: transparent;
+  animation: slide-title 0.5s linear 1 forwards;
+  @media (max-width: $breakpoint-lg) {
+    font-size: 45px;
+  }
+}
+
+.title-4 {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: $basic-details-color;
+}

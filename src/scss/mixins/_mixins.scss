@@ -1,0 +1,41 @@
+@mixin col-width($size) {
+  @if $size==null {
+    @for $i from 1 through ($col-count) {
+      .col-#{$i} {
+        flex: 0 1 $i * 100% / $col-count;
+        width: $i * 100% / $col-count;
+      }
+    }
+  } @else {
+    @for $i from 1 through ($col-count) {
+      .col-#{$size}-#{$i} {
+        flex: 0 1 $i * 100% / $col-count;
+        width: $i * 100% / $col-count;
+      }
+    }
+  }
+}
+
+@mixin col-stretched($bp) {
+  .col-#{$bp} {
+    @include col-width($bp);
+    @include col-offset($bp);
+    flex-grow: 1;
+  }
+}
+
+@mixin col-offset($size) {
+  @if $size==null {
+    @for $i from 1 through ($col-count) {
+      .col-offset-#{$i} {
+        margin-left: $i * 100% / $col-count;
+      }
+    }
+  } @else {
+    @for $i from 1 through ($col-count) {
+      .col-offset-#{$size}-#{$i} {
+        margin-left: $i * 100% / $col-count;
+      }
+    }
+  }
+}

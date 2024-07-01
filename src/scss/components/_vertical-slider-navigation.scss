@@ -1,0 +1,41 @@
+.vertical-slider-navigation {
+  position: fixed;
+  left: 36px;
+  top: 37%;
+  color: $basic-details-color;
+  z-index: 1000;
+}
+
+.dotted {
+  .vertical-nav-item & {
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $decorate-color;
+    margin: 19px 0 0;
+    padding: 0;
+  }
+}
+
+.vertical-nav-link {
+  text-decoration: none;
+  color: #a19c9c;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.is-active-section {
+  .vertical-nav-item & {
+    display: block;
+    height: 132px;
+    border-left: 4px solid $navigation-active-text-second-color;
+    border-radius: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 5.63;
+    letter-spacing: 0.24px;
+    color: $navigation-active-text-second-color;
+  }
+}

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.45" height="46.45">
+    <defs>
+        <filter id="a" width="1950" height="1110" x="-438" y="-675" filterUnits="userSpaceOnUse">
+            <feOffset dx="-1.879" dy=".684" in="SourceAlpha"/>
+            <feGaussianBlur result="blurOut" stdDeviation="2.828"/>
+            <feFlood flood-color="#121419" result="floodOut"/>
+            <feComposite in="floodOut" in2="blurOut" operator="atop"/>
+            <feComponentTransfer>
+                <feFuncA slope=".27" type="linear"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <linearGradient id="b" x1="0%" x2="99.863%" y1="0%" y2="5.234%">
+            <stop offset="0%" stop-color="#6A6F80"/>
+            <stop offset="0%" stop-color="#8C89FC"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="c" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#6048DF"/>
+            <stop offset="100%" stop-color="#482EAF"/>
+        </linearGradient>
+    </defs>
+    <g fill-rule="evenodd" filter="url(#a)">
+        <path fill="#8C89FC" d="M19.501 6.823c5.749 0 10.409 4.66 10.409 10.409 0 5.749-10.409 18.981-10.409 18.981S9.092 22.981 9.092 17.232c0-5.749 4.66-10.409 10.409-10.409z"/>
+        <path fill="url(#b)" d="M19.501 6.823c5.749 0 10.409 4.66 10.409 10.409 0 5.749-6.736 16.839-10.409 18.981-.306-3.367 5.511-11.756 4.286-18.368-2.551-9.063-15.668-5.144-4.286-11.022z" opacity=".702"/>
+        <path fill="url(#c)" d="M20.109 13.156c2.701 0 4.891 2.197 4.891 4.906 0 2.71-2.19 4.907-4.891 4.907s-4.89-2.197-4.89-4.907c0-2.709 2.189-4.906 4.89-4.906z" opacity=".702"/>
+    </g>
+</svg>

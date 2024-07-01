@@ -1,0 +1,68 @@
+.benefits {
+  position: relative;
+  background: url(../../assets/images/benefits/gradient-wheel/gradient-wheel.png),
+    url(../../assets/images/benefits/gradient-why-choose-us/gradient-why-choose-us.png),
+    url(../../assets/images/benefits/gradient-why-choose-us-2/gradient-why-choose-us-2.png),
+    url(../../assets/images/benefits/gradient-why-choose-us-3/gradient-why-choose-us-3.png),
+    url(../../assets/images/benefits/gradient-wheel/gradient-wheel.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $breakpoint-lg) {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.benefits-text {
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+  @media (max-width: $breakpoint-lg) {
+    margin: 10px;
+    margin-top: 5%;
+  }
+}
+
+.benefits-title {
+  color: $basic-details-color;
+  text-align: left;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 100px;
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 5%;
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes benefits-slide-title {
+  0% {
+    transform: translateY(-93px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.benefits-content {
+  flex-basis: 35%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  @media (max-width: $breakpoint-md) {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  @media (max-width: $breakpoint-lg) {
+    flex-basis: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+}

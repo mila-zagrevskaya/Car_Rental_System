@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: "SourceSansPro-Regular", sans-serif;
+  font-size: 14px;
+  color: $main-text-color;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+*:active,
+*:focus {
+  outline: none;
+}

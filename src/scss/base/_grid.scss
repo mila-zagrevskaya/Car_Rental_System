@@ -1,0 +1,82 @@
+%col {
+  padding: 0.75rem $indent-standart;
+}
+
+%container {
+  width: 100%;
+  padding: 0 $indent-standart;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @extend %container;
+  max-width: 1082px;
+}
+
+.container-medium {
+  @extend %container;
+  max-width: 760px;
+}
+
+.container-fluid {
+  @extend %container;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  @extend %col;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.row > [class^="col-"] {
+  @extend %col;
+
+  &.is-stretched {
+    flex: 1 1 auto;
+    min-width: 0%;
+  }
+}
+
+@media (min-width: 0px) {
+  @include col-width(null);
+  @include col-offset(null);
+  @include col-stretched(null);
+}
+
+@media (min-width: $breakpoint-xxs) {
+  @include col-width(xxs);
+  @include col-offset(xxs);
+  @include col-stretched(xxs);
+}
+
+@media (min-width: $breakpoint-xs) {
+  @include col-width(xs);
+  @include col-offset(xs);
+  @include col-stretched(xs);
+}
+
+@media (min-width: $breakpoint-sm) {
+  @include col-width(sm);
+  @include col-offset(sm);
+  @include col-stretched(sm);
+}
+
+@media (min-width: $breakpoint-md) {
+  @include col-width(md);
+  @include col-offset(md);
+  @include col-stretched(md);
+}
+
+@media (min-width: $breakpoint-lg) {
+  @include col-width(lg);
+  @include col-offset(lg);
+  @include col-stretched(lg);
+}
