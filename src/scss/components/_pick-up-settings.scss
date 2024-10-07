@@ -21,6 +21,7 @@
   letter-spacing: 0.15px;
   text-align: center;
   color: $pick-up-settings;
+  width: 100%;
 
   &:nth-child(2):before,
   &:nth-child(2):after {
@@ -34,7 +35,7 @@
     padding: 0 38px;
   }
   &:nth-child(2):after {
-    left: 100%;
+    left: 105%;
   }
 
   &:nth-child(2) {
