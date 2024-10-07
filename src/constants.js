@@ -2,6 +2,11 @@ import toyotaCamry from "assets/images/vehicles-section/car_vehicles/car_vehicle
 
 export const navItems = [
   {
+    path: "#top",
+    slideNumber: "01",
+    text: ""
+  },
+  {
     path: "#services",
     slideNumber: "02",
     text: "services"
