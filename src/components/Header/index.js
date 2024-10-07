@@ -1,40 +1,39 @@
-import React from "react";
-import Scrollchor from "react-scrollchor";
-
-import { navItems } from "constants.js";
+import React, { useState } from "react";
+import { NavHashLink } from 'react-router-hash-link';
 
 import BurgerIcon from "components/common/BurgerMenu";
+
+import { navItems } from "constants.js";
 import logo from "assets/images/logo-red.png";
 
 const Header = () => {
-  const setCurrentLinkActive = (link, path) => {
-    const location = link.href.split("/")[3];
-    console.log(location);
-    return location === path
-      ? link.classList.add("is-active")
-      : link.classList.remove("is-active");
-  };
+  const [activePage, setActivePage] = useState('#top');
+
+  const setCurrentLinkActive = (path) => {
+    setActivePage(path);
+    return;
+  }
 
   return (
     <header className="header">
       <div className="header-container container-fluid">
         <div className="logo">
-          <Scrollchor to="/" className="logo-link">
+          <NavHashLink smooth to="#top" className="logo-link">
             <img src={logo} className="logo-img" alt="logo" />
-          </Scrollchor>
+          </NavHashLink>
         </div>
         <nav className="nav">
           <ul className="nav-list">
             {navItems.map((el) => (
               <li className="nav-item" key={el.path}>
-                <Scrollchor
-                  to={el.path}
+                <NavHashLink
+                  smooth to={el.path}
                   className="nav-link"
-                  onClick={(event) =>
-                    setCurrentLinkActive(event.target, el.path)
-                  }>
+                  activeClassName={activePage && "is-active"}
+                  onClick= {() => setCurrentLinkActive(el.path)}
+                >
                   {el.text}
-                </Scrollchor>
+                </NavHashLink>
               </li>
             ))}
           </ul>

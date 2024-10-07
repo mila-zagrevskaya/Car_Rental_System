@@ -1,50 +1,45 @@
-import React, { useState } from "react";
-import Scrollchor from "react-scrollchor";
+import React, { useState, useEffect } from "react";
+import { NavHashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
 
 import { navItems } from "constants.js";
 
 const VerticalSliderNavigation = () => {
-  const [isActiveSection, changeSection] = useState(false);
+  const location = useLocation();
+  const [activePage, setActivePage] = useState('#top');
 
-  const setCurrentLinkActive = (link, path) => {
-    const location = link.href.split("/")[3];
-    changeSection(!isActiveSection);
-    return location === path
-      ? link.classList.add("is-active-section")
-      : link.classList.remove("is-active-section");
-  };
+  useEffect(() => {
+    if (!location.hash) {
+      setActivePage('#top');
+      window.location.hash = '#top';
+    } else {
+      setActivePage(location.hash);
+    }
+  }, [location, location.hash]);
+
+
+  const setCurrentLinkActive = (path) => {
+    setActivePage(path);
+    return;
+  }
 
   return (
     <div className="vertical-slider-navigation">
       <ul className="vertical-slider-nav-list">
-        <li className="vertical-nav-item" key="#home">
-          <Scrollchor
-            to="/"
-            className="is-active-section vertical-nav-link "
-            onClick={() => {}}>
-            01
-          </Scrollchor>
-        </li>
         {navItems.map((page) => (
           <li className="vertical-nav-item" key={page.slideNumber}>
-            <Scrollchor
-              to={page.path}
-              className="vertical-nav-link dotted"
-              onClick={(event) =>
-                setCurrentLinkActive(event.target, page.path)
-              }>
+            <NavHashLink 
+              smooth to={page.path}
+              className="vertical-nav-link"
+              activeClassName={activePage && "is-active-section"}
+              onClick= {() => setCurrentLinkActive(page.path)}
+              >
+              <span className="page-numbered">{page.slideNumber}</span>
+              <span className="dotted"></span>
               <span className="visually-hidden">{page.text}</span>
-            </Scrollchor>
+            </NavHashLink>
           </li>
         ))}
-        <li className="vertical-nav-item">
-          <Scrollchor
-            to="/"
-            className="vertical-nav-link dotted"
-            onClick={() => {}}>
-            <span className="visually-hidden">Contacts</span>
-          </Scrollchor>
-        </li>
       </ul>
     </div>
   );
