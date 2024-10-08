@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import TilesList from "../../TilesList";
+import useInView from "helpers/useInView";
 
 const Services = () => {
+  const sectionRef = useRef(null);
+
+  useInView(sectionRef);
+
   return (
-    <div className="section services" data-anchor="/services" id="services">
+    <div className="section services" data-anchor="/services" id="services" ref={sectionRef}>
       <div className="services-sliding-car"></div>
       <div className="container">
         <div className="services-content row">

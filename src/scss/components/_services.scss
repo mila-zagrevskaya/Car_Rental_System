@@ -34,7 +34,10 @@
   background-position: left bottom;
   height: 100vh;
   width: 100%;
-  animation: service-slide-car $transition 1 forwards;
+
+  .in-view & {
+    animation: service-slide-car $transition 1 forwards;
+  }
 }
 
 @keyframes service-slide-car {

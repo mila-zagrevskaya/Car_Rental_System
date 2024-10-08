@@ -49,7 +49,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   //-webkit-text-fill-color: transparent;
-  animation: slide-title 0.5s linear 1 forwards;
+
+  .in-view  & {
+    animation: slide-title 0.5s linear 1 forwards;
+  }
+  
   @media (max-width: $breakpoint-lg) {
     font-size: 45px;
   }

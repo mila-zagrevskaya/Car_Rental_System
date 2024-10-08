@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import PickUpSettings from "./PickUpSettings";
+import useInView from "helpers/useInView";
 
 const Hero = () => {
+  const sectionRef = useRef(null);
+
+  useInView(sectionRef);
+
   return (
-    <div className="section hero" data-anchor="/" id="/">
+    <div className="section hero" data-anchor="/" id="/" ref={sectionRef}>
       <div className="container">
         <div className="hero-sliding-car" />
         <div className="hero-content">

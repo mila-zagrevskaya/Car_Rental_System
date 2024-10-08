@@ -15,8 +15,10 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  animation: hero-slide-car 2s linear 1;
-  animation-fill-mode: forwards;
+
+  .in-view  & {
+    animation: hero-slide-car 2s linear 1 forwards;
+  }
 }
 
 @keyframes hero-slide-car {

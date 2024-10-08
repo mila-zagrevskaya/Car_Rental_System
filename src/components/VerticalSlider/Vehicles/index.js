@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
-import CarouselSlider from "components/CarouselSlider";
+import CarouselSlider from "components/CarouselSlider"
+import useInView from "helpers/useInView";
+
 
 const Vehicles = () => {
+  const sectionRef = useRef(null);
+
+  useInView(sectionRef);
+
   return (
-    <div className="section vehicles" data-anchor="/vehicles" id="vehicles">
+    <div className="section vehicles" data-anchor="/vehicles" id="vehicles" ref={sectionRef}>
       <div className="vehicles-sliding-car" />
       <div className="vehicles-text col-4">
         <h2 className="title-2 vehicles-title" data-title="Our vehicles">Our vehicles</h2>
