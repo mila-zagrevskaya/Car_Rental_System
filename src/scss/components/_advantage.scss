@@ -7,7 +7,6 @@
   }
 }
 
-//advantage-list
 .advantage-list {
   display: flex;
   flex-direction: column;
@@ -43,9 +42,10 @@
 .benefits-sliding-wheel {
   display: block;
   max-width: 350px;
-  animation-name: benefits-slide-wheel;
-  animation: benefits-slide-wheel $transition 1;
-  animation-fill-mode: forwards;
+
+  .in-view  & {
+    animation: benefits-slide-wheel 1s linear 1 forwards;
+  }
 
   @media (max-width: $breakpoint-lg) {
     max-width: 300px;
@@ -54,10 +54,7 @@
 
 @keyframes benefits-slide-wheel {
   0% {
-    transform: translate3d(50%, 0, 0);
-  }
-  50% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
   100% {
     transform: translate3d(10%, 0, 0);
