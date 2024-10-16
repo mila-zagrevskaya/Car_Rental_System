@@ -44,7 +44,7 @@
   max-width: 350px;
 
   .in-view  & {
-    animation: benefits-slide-wheel 1s linear 1 forwards;
+    animation: benefits-slide-wheel .5s linear 1 forwards;
   }
 
   @media (max-width: $breakpoint-lg) {

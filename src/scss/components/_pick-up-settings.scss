@@ -12,7 +12,7 @@
   color: $basic-details-color;
 }
 
-.pick-up-settings-items {
+.pick-up-settings-item {
   position: relative;
   display: flex;
   text-align: center;
@@ -22,6 +22,8 @@
   text-align: center;
   color: $pick-up-settings;
   width: 100%;
+  cursor: pointer;
+  transition: $transition;
 
   &:nth-child(2):before,
   &:nth-child(2):after {
@@ -32,13 +34,13 @@
     width: 1px;
     height: calc(100% - 24px);
     border-left: 1px solid $basic-details-color;
-    padding: 0 38px;
   }
   &:nth-child(2):after {
-    left: 105%;
+    left: 100%;
   }
 
-  &:nth-child(2) {
+  &:nth-child(2),
+  &:nth-child(3) {
     .icon-keyboard_arrow_down {
       &:after {
         font-size: 2em;
@@ -54,8 +56,13 @@
   }
 }
 
+.dropdown-title {
+  .pick-up-settings-item:hover & {
+    color: $navigation-active-text-second-color;
+  }
+}
+
 li.search {
-  background: linear-gradient(to right, #5e45db 0%, #3f249d 100%);
   padding: 0;
   min-width: 185px;
 }
@@ -64,63 +71,46 @@ li.search {
   font-weight: bold;
   text-align: center;
   color: $search-button-color;
+  background: linear-gradient(to right, #5e45db 0%, #3f249d 100%);
   text-transform: uppercase;
   padding: 0 52px;
+  width: 100%;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    color: $navigation-active-text-second-color;
+  }
 }
 
-.icon {
-  padding-left: 3.1em;
-  position: relative;
-  &:before,
-  &:after {
+.dropdown {
+  .pick-up-settings & {
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
-    width: 1em;
-    height: 1em;
-    color: currentColor;
-  }
-  &:after {
-    left: 100%;
-  }
-}
-
-.icon-keyboard_arrow_down {
-  &:after {
-    font-size: 2em;
-    top: 33%;
-    left: 82%;
+    max-height: 145px;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: #1e202c90;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 1000;
+    margin-top: 5px;
   }
 }
 
-.icon-location {
-  &:before {
-    content: "";
-    width: 30px;
-    font-size: 33px;
-    background-image: url(../../assets/icons/location-icon.svg);
-    background-position: 0;
-  }
+.pick-up-settings-list {
+  position: relative;
 }
 
-.icon-calendar {
-  padding-left: 3.5em;
-  &:before {
-    content: "01";
-    width: 30px;
-    height: 33px;
-    font-size: 15px;
-    letter-spacing: 0.21px;
-    font-weight: 500;
-    color: $basic-details-color;
-    left: 0;
-    background-position: -10px -10px;
-    background-image: url(../../assets/icons/calendar-icon-1.svg);
-  }
-}
-
-.icon-return {
-  &:before {
-    content: "31";
+.dropdown-item {
+  .pick-up-settings & {
+    padding: 10px;
+  
+    &:hover {
+      background: linear-gradient(to right, #6148e1 0%, #3e249c 100%);
+      transition: all 0.2s;
+    }
   }
 }

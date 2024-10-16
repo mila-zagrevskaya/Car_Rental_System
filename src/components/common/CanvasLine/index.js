@@ -1,8 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 
 import { updateLine } from "helpers.js";
 
 class CanvasLine extends Component {
+  canvasRef = createRef(null); 
+
   componentDidMount() {
     this.updateCanvas();
   }
@@ -37,7 +39,7 @@ class CanvasLine extends Component {
     const canvasId = advantageItem ? `canvas-${advantageItem.id}` : "canvas";
     return (
       <div className="canvas-line">
-        <canvas id={canvasId} ref="canvas" width="500" height="100"></canvas>
+        <canvas id={canvasId} ref={this.canvasRef} width="500" height="100"></canvas>
       </div>
     );
   }

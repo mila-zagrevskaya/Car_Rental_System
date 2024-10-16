@@ -13,6 +13,12 @@
 @import "base/icons";
 @import "base/helpers";
 
+@import "components/common/burger-icon";
+@import "components/common/contact-us-button";
+@import "components/common/buttons";
+@import "components/common/icons";
+@import "components/common/date-picker";
+
 @import "components/vertical-slider-navigation";
 
 @import "components/hero";
@@ -27,7 +33,3 @@
 @import "components/benefits";
 @import "components/advantage";
 @import "components/benefits-list";
-
-
-@import "components/common/burger-icon";
-@import "components/common/contact-us-button";

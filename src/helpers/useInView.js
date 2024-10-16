@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 
 const useInView = (ref, options = { threshold: 0.6 }) => {
   useEffect(() => {
+    const element = ref.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -12,13 +14,13 @@ const useInView = (ref, options = { threshold: 0.6 }) => {
       });
     }, options);
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [ref, options]);
