@@ -1,0 +1,12 @@
+.button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  color: currentColor;
+  font-size: inherit;
+}
+
+.dropdown-button {
+  @extend .button;
+  
+}

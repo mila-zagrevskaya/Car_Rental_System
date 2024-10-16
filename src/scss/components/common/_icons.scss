@@ -1,0 +1,56 @@
+.icon {
+  padding-left: 3.1em;
+  position: relative;
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    color: currentColor;
+  }
+  &:after {
+    left: 100%;
+  }
+}
+
+.icon-keyboard_arrow_down {
+  &:after {
+    font-size: 2em;
+    top: 33%;
+    left: 82%;
+  }
+}
+
+.icon-location {
+  &:before {
+    content: "";
+    width: 30px;
+    font-size: 33px;
+    background-image: url(../../../assets/icons/location-icon.svg);
+    background-position: 0;
+  }
+}
+
+.icon-calendar {
+  padding-left: 3.5em;
+  &:before {
+    content: "01";
+    width: 30px;
+    height: 33px;
+    font-size: 15px;
+    letter-spacing: 0.21px;
+    font-weight: 500;
+    color: $basic-details-color;
+    left: 0;
+    background-position: -10px -10px;
+    background-image: url(../../../assets/icons/calendar-icon-1.svg);
+  }
+}
+
+.icon-return {
+  &:before {
+    content: "31";
+  }
+}

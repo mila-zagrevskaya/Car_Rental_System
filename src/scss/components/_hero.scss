@@ -37,14 +37,16 @@
   max-width: 622px;
   margin-left: auto;
   flex: 1 1 auto;
+  max-height: 60%;
 }
 
 .hero-title {
   position: relative;
   padding-top: 30px;
-  animation-name: slide-title;
-  animation: slide-title $transition 1;
-  animation-fill-mode: forwards;
+
+  .in-view  & {
+    animation: slide-title 1s linear 1 forwards;
+  }
 }
 
 @keyframes slide-title {
