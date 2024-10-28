@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavHashLink } from 'react-router-hash-link';
 import { useLocation } from 'react-router-dom';
 
-import { navItems } from "constants.js";
+import { navItems } from "constants/pages.js";
 
 const VerticalSliderNavigation = () => {
   const location = useLocation();

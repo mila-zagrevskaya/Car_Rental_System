@@ -38,3 +38,15 @@
     outline: 1px solid #3e249c;
   }
 }
+
+.error-message {
+  position: absolute;
+  top: 100%;
+  color: $navigation-active-text-second-color;
+  margin-top: 10px;
+  display: none;
+
+  .has-error & {
+    display: block;
+  }
+}

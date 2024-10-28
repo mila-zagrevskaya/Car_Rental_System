@@ -2,7 +2,7 @@ import React from "react";
 
 import CanvasLine from "components/common/CanvasLine";
 import wheelImage from "assets/images/benefits/wheel-image/wheel-image.png";
-import { ourAdvantages } from "constants.js";
+import { ourAdvantages } from "constants/pages.js";
 
 const Advantage = () => {
   return (

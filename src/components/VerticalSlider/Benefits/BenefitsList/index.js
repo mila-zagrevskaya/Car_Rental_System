@@ -1,6 +1,6 @@
 import React from "react";
 
-import { benefits } from "constants.js";
+import { benefits } from "constants/pages.js";
 
 const BenefitsList = () => {
   return (
