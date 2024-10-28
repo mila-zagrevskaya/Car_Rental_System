@@ -1,0 +1,25 @@
+.custom-select-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #1e202c90;
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-select__options-list {
+    background-color: #1e202c90;
+}
+
+.custom-select__option {
+  padding: 10px;
+  cursor: pointer;
+  &:hover,
+  &.selected {
+    background: linear-gradient(to right, #6148e1 0%, #3e249c 100%);
+    transition: all 0.2s;
+  }
+}

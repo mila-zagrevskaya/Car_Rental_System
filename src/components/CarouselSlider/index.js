@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "components/common/Button";
-import { premiumCars } from "constants.js";
+import { premiumCars } from "constants/pages.js";
 
 const CarouselSlider = () => {
   return (

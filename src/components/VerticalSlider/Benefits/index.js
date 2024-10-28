@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import Advantage from "./Advantage/index";
+import Advantage from "./Advantage";
 import BenefitsList from "./BenefitsList";
 import useInView from "helpers/useInView"
 

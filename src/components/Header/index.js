@@ -3,7 +3,7 @@ import { NavHashLink } from 'react-router-hash-link';
 
 import BurgerIcon from "components/common/BurgerMenu";
 
-import { navItems } from "constants.js";
+import { navItems } from "constants/pages.js";
 import logo from "assets/images/logo-red.png";
 
 const Header = () => {

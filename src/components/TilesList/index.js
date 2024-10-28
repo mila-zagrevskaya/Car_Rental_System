@@ -1,6 +1,6 @@
 import React from "react";
 
-import { services } from "constants.js";
+import { services } from "constants/pages.js";
 
 const TilesList = () => {
   return (

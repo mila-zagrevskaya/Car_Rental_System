@@ -2,8 +2,9 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #1e202c90;
+  background-color: #1e202c;
   color: #fff;
+  z-index: 1;
 }
 
 .react-calendar__navigation {
@@ -12,6 +13,10 @@
 
 .react-calendar__navigation button {
   background: transparent;
+}
+.react-calendar__tile {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .react-calendar__tile,
