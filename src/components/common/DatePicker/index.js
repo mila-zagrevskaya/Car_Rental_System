@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Calendar from 'react-calendar';
 
 import 'react-calendar/dist/Calendar.css';
 
-const DatePicker = () => {
-  const [value, onChange] = useState(new Date());
-  console.log("value", value);
-
+const DatePicker = ({ value, onChange }) => {
   return (
     <div>
       <Calendar
-        onChange={onChange}
         value={value}
+        onChange={(date) => {
+          onChange(date);
+        }}
         minDate={new Date()}
         locale/>
     </div>
