@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import CarouselSlider from "components/CarouselSlider"
+import { CarouselSlider } from "components/common/CarouselSlider";
 import useInView from "helpers/useInView";
 
 

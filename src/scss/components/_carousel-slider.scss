@@ -6,25 +6,56 @@
 
 .carousel-slider-list {
   list-style: none;
-  display: flex;
-  position: relative;
-  align-items: stretch;
   width: 100%;
+}
+
+.slick-list{
+  height: 500px;
+}
+
+.slick-track {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.slick-center {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.slick-slide {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  width: 736px !important;
+  display: flex !important;           /* Center the content if needed */
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  &>div {
+    width: 100%;
+  }
+}
+
+.slick-active.slick-current {
+  z-index: 11;
+  opacity: 1;
+  position: relative;
 }
 
 .carousel-slider-item {
   min-height: 410px;
   width: 100%;
   max-width: 736px;
-  background-image: url(../../assets/images/vehicles-section/card-with-the-machine/card-with-the-machine.png);
-  background-size: cover;
-  background-position: 0;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
   margin: 0 auto;
   transition: all 0.3s ease-in-out;
+
   @media (max-width: $breakpoint-md) {
     max-width: 536px;
   }
@@ -34,15 +65,19 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  background-image: url(../../assets/images/vehicles-section/card-with-the-machine/card-with-the-machine.png);
+  background-size: cover;
+  background-position: 0;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  padding: 55px;
+  padding: 35px  35px 55px 55px;
 }
 
 .carousel-item-description {
   height: 100%;
   display: block;
-  flex-basis: 45%;
+  flex-basis: 55%;
 }
 
 .carousel-item-name {
@@ -197,8 +232,10 @@
 
 .carousel-item-photo {
   position: absolute;
-  top: 21%;
+  // top: 21%;
+  top: 13%;
   left: -37%;
+  max-width: 500px;
 
   @media (max-width: $breakpoint-md) {
     top: 59%;
@@ -245,6 +282,8 @@
   &:before {
     background-image: url(../../assets/icons/like-icon/like-icon.png);
   }
+
+  &.highlighted,
   &:hover {
     &:before {
       background: none;
