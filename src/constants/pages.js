@@ -1,5 +1,3 @@
-import toyotaCamry from "assets/images/vehicles-section/car_vehicles/car_vehicles.png";
-
 export const navItems = [
   {
     path: "#top",
@@ -62,59 +60,6 @@ export const services = [
     icon: "car-navigation-icon",
     className: "transform-bottom"
   }
-];
-
-export const premiumCars = [
-  {
-    name: "Toyota Camry",
-    rating: 5,
-    price: 90,
-    characteristics: {
-      speed: "8-speed Automatic",
-      volumeEngine: "2.5-Liter 4-Cylinder 203HP",
-      stock: "KU680564",
-      model: "2532",
-      vin: "4T1B11HK1KU680564",
-      luggage: 5,
-      persons: 4,
-      doors: 4
-    },
-    photo: toyotaCamry,
-    id: 1
-  }
-  // ,
-  // {
-  //   name: "Toyota Camry",
-  //   rating: 5,
-  //   price: 90,
-  //   characteristics: {
-  //     desc: "8-speed Automatic  2.5-Liter 4-Cylinder 203HP",
-  //     Stock: "KU680564",
-  //     Model: "2532",
-  //     Vin: "4T1B11HK1KU680564",
-  //     doors: 4,
-  //     persons: 4,
-  //     luggage: 5
-  //   },
-  //   photo: toyotaCamry,
-  //   id: 1
-  // },
-  // {
-  //   name: "Toyota Camry",
-  //   rating: 5,
-  //   price: 90,
-  //   characteristics: {
-  //     desc: "8-speed Automatic  2.5-Liter 4-Cylinder 203HP",
-  //     Stock: "KU680564",
-  //     Model: "2532",
-  //     Vin: "4T1B11HK1KU680564",
-  //     doors: 4,
-  //     persons: 4,
-  //     luggage: 5
-  //   },
-  //   photo: toyotaCamry,
-  //   id: 1
-  // }
 ];
 
 export const benefits = [
