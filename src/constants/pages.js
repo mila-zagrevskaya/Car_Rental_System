@@ -18,17 +18,17 @@ export const navItems = [
     path: "#benefits",
     slideNumber: "04",
     text: "our benefits"
-  },
-  {
-    path: "#testimonials",
-    slideNumber: "05",
-    text: "testimonials"
-  },
-  {
-    path: "#stations",
-    slideNumber: "06",
-    text: "stations"
   }
+  // {
+  //   path: "#testimonials",
+  //   slideNumber: "05",
+  //   text: "testimonials"
+  // },
+  // {
+  //   path: "#stations",
+  //   slideNumber: "06",
+  //   text: "stations"
+  // }
 ];
 
 export const services = [

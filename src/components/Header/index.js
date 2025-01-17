@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavHashLink } from 'react-router-hash-link';
 
-import BurgerIcon from "components/common/BurgerMenu";
+// import BurgerIcon from "components/common/BurgerMenu";
 
 import { navItems } from "constants/pages.js";
 import logo from "assets/images/logo-red.png";
@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         <nav className="nav">
           <ul className="nav-list">
-            {navItems.map((el) => (
+            {navItems.slice(1).map((el) => (
               <li className="nav-item" key={el.path}>
                 <NavHashLink
                   smooth to={el.path}
@@ -38,7 +38,7 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <BurgerIcon />
+        {/* <BurgerIcon /> */}
       </div>
     </header>
   );

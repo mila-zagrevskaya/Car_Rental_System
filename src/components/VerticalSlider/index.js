@@ -13,7 +13,7 @@ const VerticalSlider = () => {
       <Vehicles />
       <Benefits />
 
-      <section
+      {/* <section
         className="section testimonials"
         data-anchor="/testimonials"
         id="testimonials">
@@ -24,7 +24,7 @@ const VerticalSlider = () => {
         data-anchor="/stations"
         id="stations">
         <h2 className="title-2 col-offset-1">stations</h2>
-      </section>
+      </section> */}
     </div>
   );
 };

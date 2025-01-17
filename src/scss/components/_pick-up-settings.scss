@@ -1,16 +1,25 @@
 .pick-up-settings {
   display: flex;
   justify-content: center;
-  background-color: #879de810;
+  background-color: #879de84d;
   margin-top: 54px;
   position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    background-color: #879de810;
+  }
 }
 
 .pick-up-settings-list {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   color: $basic-details-color;
+
+  @media (min-width: $breakpoint-sm-max) {
+    flex-direction: row;
+  }
 }
 
 .pick-up-settings-item {
@@ -84,6 +93,7 @@ li.search {
   text-transform: uppercase;
   padding: 0 52px;
   width: 100%;
+  min-height: 70px;
   cursor: pointer;
   transition: $transition;
 

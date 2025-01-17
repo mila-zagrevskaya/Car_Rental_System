@@ -1,9 +1,14 @@
 .vertical-slider-navigation {
+  display: none;
   position: fixed;
   left: 36px;
   top: 37%;
   color: $basic-details-color;
   z-index: 1000;
+
+  @media (min-width: $breakpoint-md) {
+    display: block;
+  }
 }
 
 .vertical-nav-item {

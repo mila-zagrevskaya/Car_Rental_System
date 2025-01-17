@@ -13,8 +13,16 @@
   top: -1000px;
   background-image: url(../../assets/images/car.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 30%;
   height: 100vh;
   width: 100%;
+
+  @media screen and (min-width: $breakpoint-md-max) {
+    left: 0;
+    background-size: contain;
+    transform: translateX(0);
+  }
 
   .in-view  & {
     animation: hero-slide-car 2s linear 1 forwards;
@@ -37,12 +45,20 @@
   max-width: 622px;
   margin-left: auto;
   flex: 1 1 auto;
-  max-height: 60%;
+
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 60%;
+    font-size: 1.3rem;
+  }
 }
 
 .hero-title {
   position: relative;
-  padding-top: 30px;
+  padding-top: 15px;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    padding-top: 30px;
+  }
 
   .in-view  & {
     animation: slide-title 1s linear 1 forwards;
@@ -76,10 +92,18 @@
   color: $navigation-active-text-second-color;
   font-weight: normal;
   margin-left: 28%;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 0.7em;
   letter-spacing: 0.24px;
   text-align: left;
+
+  @media (min-width: $breakpoint-xs-max) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 24px;
+  }
 
   &:after {
     content: "";
@@ -109,8 +133,12 @@
 }
 
 .text-bold {
-  font-size: 20px;
+  font-size: 1.3rem;
   letter-spacing: 0.3px;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-desc {

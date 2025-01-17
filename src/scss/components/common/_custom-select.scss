@@ -1,12 +1,12 @@
 .custom-select-container {
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 0;
   width: 100%;
   max-height: 200px;
   overflow-y: auto;
   background-color: #1e202c90;
-  z-index: 3;
+  z-index: 55;
   color: rgba(255, 255, 255, 0.7);
 }
 
