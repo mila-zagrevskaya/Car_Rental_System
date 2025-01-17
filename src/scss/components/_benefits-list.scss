@@ -30,8 +30,13 @@
   @media (max-width: $breakpoint-md) {
     width: 45%;
   }
+  
   @media (max-width: $breakpoint-lg) {
     max-width: 240px;
+  }
+
+  @media (max-width: $breakpoint-md-max) {
+    max-width: 315px;
   }
 }
 

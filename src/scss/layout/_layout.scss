@@ -9,8 +9,12 @@
 }
 
 .section {
-  padding: $indent-containers;
+  padding: $indent-containers 50px;
   height: 100vh;
+
+  @media (min-width: $breakpoint-sm-max) {
+    padding: $indent-containers;
+  }
 }
 
 .visually-hidden {

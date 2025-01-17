@@ -4,9 +4,13 @@
 
 %container {
   width: 100%;
-  padding: 0 $indent-standart;
+  padding: 0 $indent-standart-lg;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 $indent-standart;
+  }
 }
 
 .container {
@@ -15,6 +19,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1450px;
+  }
 }
 
 .container-medium {

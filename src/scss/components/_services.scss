@@ -17,11 +17,15 @@
 }
 
 .services-tiles {
-  width: auto;
+  width: 50%;
   flex: 1 1 auto;
-  min-width: 0%;
-  padding-top: 80px;
+  padding-top: 10%;
   padding-bottom: 80px;
+
+  @media (min-width: $breakpoint-md-max) {
+    width: auto;
+    min-width: 0%;
+  }
 }
 
 .services-sliding-car {
@@ -29,11 +33,15 @@
   top: 0;
   left: -1000px;
   background-image: url(../../assets/images/services-section/car-our-services_2020-04-03/car-our-services.png);
-  background-size: contain;
+  background-size: initial;
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 100vh;
   width: 100%;
+
+  @media (min-width: $breakpoint-md-max) {
+    background-size: contain;
+  }
 
   .in-view & {
     animation: service-slide-car $transition 1 forwards;
@@ -55,6 +63,10 @@
   @media (max-width: $breakpoint-md) {
     width: 100%;
     margin: 10px;
+  }
+
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 450px;
   }
 }
 
